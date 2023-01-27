@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGO-DUDES WEBSHOP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="images/LD_logo.svg" alt="LEGO-DUDES">
+            </a>
+            <figure id="cart" class="float-right" onClick="toggleCart()">
+                <span class="label">0</span>
+                <img src="images/legocart.svg" alt="Handlekurv">
+            </figure>
+        </header>
+        <!-- <section id="cartview" class="hidden">
+            <h3>Din handlevogn</h3>
+            <ul>
+                <li>
+                    Du har ingen varer i handlevognen.
+                </li>
+            </ul>
+            <p>Totalt kr. <span id="totalt">0</span>,-</p>
+        </section> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="city.html">City</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ninjago.html">Ninjago</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="castle-knights.html">Castle and Knights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="marine-pirates.html">Marine and Pirates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movie-characters.html">Movie Characters</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+          <h2 class="text-center">Ninjago</h2>
+          <div class="row">
+              <article class="col-sm-3 product-card">
+                  <img class="img-fluid" src="images/PROD_dragon_zane.webp" alt="Produktbilde av Zane">
+                  <a href="ninjago.html">Ninjago</a>
+                  <h3 class="text-center">Dragon Zane</h3>
+                  <span class="price text-center">Kr. 89,-</span>
+                  <button class="btn btn-primary btn-block" onClick="addToCart('Dragon Zane', 89)">Legg i handlekurv</button>
+              </article>
+              <article class="col-sm-3 product-card">
+                  <img class="img-fluid" src="images/PROD_lil_ninja.webp" alt="Produktbilde av Zane">
+                  <a href="ninjago.html">Ninjago</a>
+                  <h3 class="text-center">Lil Ninja</h3>
+                  <span class="price text-center">Kr. 89,-</span>
+                  <button class="btn btn-primary btn-block" onClick="addToCart('Lil Ninja', 89)">Legg i handlekurv</button>
+              </article>
+              <article class="col-sm-3 product-card">
+                  <img class="img-fluid" src="images/PROD_master_wu.webp" alt="Produktbilde av Zane">
+                  <a href="ninjago.html">Ninjago</a>
+                  <h3 class="text-center">Master Wu</h3>
+                  <span class="price text-center">Kr. 89,-</span>
+                  <button class="btn btn-primary btn-block" onClick="addToCart('Master Wu', 89)">Legg i handlekurv</button>
+              </article>
+              <article class="col-sm-3 product-card">
+                  <img class="img-fluid" src="images/PROD_scuba_kai.webp" alt="Produktbilde av Zane">
+                  <a href="ninjago.html">Ninjago</a>
+                  <h3 class="text-center">Scuba Kai</h3>
+                  <span class="price text-center">Kr. 89,-</span>
+                  <button class="btn btn-primary btn-block" onClick="addToCart('Scuba Kai', 89)">Legg i handlekurv</button>
+              </article>
+          </div>
+          </main>
+        </body>
